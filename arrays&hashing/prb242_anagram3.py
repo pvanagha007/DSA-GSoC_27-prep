@@ -1,6 +1,6 @@
 #using neetcode solution, same as mine but uses less variables, hence runtime and space is optimized
 class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
+    def isAnagram(self, s: str, t: str) -> bool: #the usual class and function definition for leetcode
         if len(s)!=len(t):
             return False
         countS={}
