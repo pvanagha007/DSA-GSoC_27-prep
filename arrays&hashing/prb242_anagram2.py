@@ -4,11 +4,11 @@ class Solution:
         if len(s)!=len(t):
             return False
         
-        #sorting both strings
+        #sorting both strings and storing them in a and b respectively
         a=sorted(s)
         b=sorted(t)
 
-        #counting frequency of each character in string a
+        #counting frequency of each character in string a 
         counter=1
         count={}
         curr=a[0]
@@ -36,7 +36,7 @@ class Solution:
         count2[curr2]=counter2
 
 
-        #comparing both frequency dictionaries
+        #comparing both frequency dictionaries to check if they are the same, if not return false
         for key in count2:
             if key not in count or count2[key] != count[key]:
                 return False
