@@ -1,6 +1,7 @@
 #using neetcode solution watch the youtube video, same as mine but uses less variables, hence runtime and space is optimized
 class Solution:
-    def isAnagram(self, s: str, t: str) -> bool: #the usual class and function definition for leetcode
+    #the usual class and function definition for leetcode problems, where we define a class named Solution and a method named isAnagram that takes two strings s and t as input and returns a boolean value indicating whether the two strings are anagrams of each other.
+    def isAnagram(self, s: str, t: str) -> bool: 
         if len(s)!=len(t):
             return False
         countS={}
