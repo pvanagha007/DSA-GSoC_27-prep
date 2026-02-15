@@ -1,0 +1,18 @@
+#my partial solution
+
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        sort= ["".join(sorted(word)) for word in strs]  #sort through it
+        dict1={}
+        for idx,val in enumerate(strs):
+            key=sort[idx]    #the key will the sorted word
+            if key in dict1:
+                dict1[key].append(val)      #append the unsorted as a value to the key which is sorted
+
+            else:
+                dict1[key]=[val]    #store the val as a list inside the dict
+        return list(dict1.values())   #use list because otherwise it returns a view obj
+    
+
+''' Total time	O(N * K log K)
+    Total space	O(N * K)'''
