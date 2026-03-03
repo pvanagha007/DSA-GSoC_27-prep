@@ -4,5 +4,5 @@
   
   ## Progress Tracker
   - Week 1: - 8 problems solved
-  - Week 2: -
+  - Week 2: - 7 problems solved
   
